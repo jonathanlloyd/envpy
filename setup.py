@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -20,6 +20,8 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startsw
 setup(
     author='Jonathan Lloyd',
     author_email='jonathan@thisisjonathan.com',
+    url='https://github.com/turingincomplete/envpy',
+    download_url='https://github.com/turingincomplete/envpy/archive/v0.0.2.tar.gz',
     classifiers=[
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
