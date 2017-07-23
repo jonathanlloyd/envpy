@@ -21,7 +21,7 @@ setup(
     author='Jonathan Lloyd',
     author_email='jonathan@thisisjonathan.com',
     url='https://github.com/turingincomplete/envpy',
-    download_url='https://github.com/turingincomplete/envpy/archive/v0.0.2.tar.gz',
+    download_url='https://github.com/turingincomplete/envpy/archive/v0.1.0.tar.gz',
     classifiers=[
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
