@@ -2,6 +2,8 @@
 
 ## Overview
 Python library for loading config from environment variables.
+Suitable for implementing the config requirements of a 12-factor app:
+https://12factor.net/config
 
 ## Getting Started
 
@@ -16,7 +18,7 @@ Requirements before installation:
  * pip3
 
 ### Usage
-```
+```python
 """Basic usage script for envpy"""
 
 import envpy
