@@ -27,3 +27,6 @@ nosetests.xml
 
 # Venv
 venv/
+
+# PyPi builds
+dist/
