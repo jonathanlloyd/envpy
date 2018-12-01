@@ -4,22 +4,18 @@
 
 class EnvpyError(Exception):
     """Base class for all envpy errors."""
-    pass
 
 class MissingConfigError(EnvpyError):
     """Raised when a config item is missing from the environment and has
     no default.
     """
-    pass
 
 class ValueTypeError(EnvpyError):
     """Raised when a Schema is created with an invalid value type"""
-    pass
 
 class ParsingError(EnvpyError):
     """Raised when the value pulled from the environment cannot be parsed
     as the given value type."""
-    pass
 
 
 # Parsers
@@ -58,9 +54,10 @@ PARSERS = {
 
 
 # Parsing logic
+
 SENTINAL = object()
 
-class Schema(object): #pylint: disable=too-few-public-methods
+class Schema: #pylint: disable=too-few-public-methods
     """Schema that describes a single environment config item
 
     Args:
@@ -93,12 +90,15 @@ class Schema(object): #pylint: disable=too-few-public-methods
         else:
             raise KeyError(key)
 
+
 def parse_env(config_schema, env):
     """Parse the values from a given environment against a given config schema
 
     Args:
-        config_schema: s
-        env: s
+        config_schema: A dict which maps the variable name to a Schema object
+            that describes the requested value.
+        env: A dict which represents the value of each variable in the
+            environment.
     """
     try:
         return {
