@@ -1,5 +1,7 @@
 envpy
 =====
+.. image:: https://travis-ci.org/jonathanlloyd/envpy.svg?branch=master
+    :target: https://travis-ci.org/jonathanlloyd/envpy
 
 Overview
 --------
