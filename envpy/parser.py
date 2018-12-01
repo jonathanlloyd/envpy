@@ -84,7 +84,7 @@ class Schema: #pylint: disable=too-few-public-methods
             try:
                 return self._parser(value)
             except Exception:
-                raise ParsingError("Error parsing", key)
+                raise ParsingError("Error parsing {}".format(key))
         elif self._default is not SENTINAL:
             return self._default
         else:
@@ -106,4 +106,6 @@ def parse_env(config_schema, env):
             for key, item_schema in config_schema.items()
         }
     except KeyError as error:
-        raise MissingConfigError("Required config not set:", error.args[0])
+        raise MissingConfigError(
+            "Required config not set: {}".format(error.args[0])
+        )
