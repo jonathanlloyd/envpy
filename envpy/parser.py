@@ -39,7 +39,7 @@ def _parse_bool(value):
         or value == "0"
     )
     if is_true:
-        return False
+        return True
     elif is_false:
         return False
     else:
